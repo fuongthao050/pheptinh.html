@@ -1,0 +1,63 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Java script</title>
+<script>
+function Nhan()
+{
+	var a=document.getElementById("txtA").value;
+	var b=document.getElementById("txtB").value;
+	document.getElementById("txtKQ").value=a*b;
+}
+function Chia()
+{
+	var a=document.getElementById("txta").value;
+	var b=document.getElementById("txtb").value;
+	document.getElementById("txtkq").value=a/b;
+}
+function Cong()
+{
+	var a=document.getElementById("txtU").value;
+	var b=document.getElementById("txtX").value;
+	document.getElementById("txtOP").value=a+b;
+}
+function Tru()
+{
+	var a=document.getElementById("txtC").value;
+	var b=document.getElementById("txtD").value;
+	document.getElementById("txtDA").value=a-b;
+}
+
+</script>
+</head>
+<body>
+<p>Java script</p>
+<p>Tác dụng: làm trang web linh hoạt + có tương tác</p>
+<p>Các phép toán cơ bản</p>
+<p>1.Phép nhân: <input type="text" id="txtA" name="T2" size="13">&nbsp; x&nbsp; 
+<input type="text" id="txtB" name="T3" size="14">&nbsp;
+<input type="button" value=" = " onclick="Nhan()" >
+<input type="text" id="txtKQ" name="T6" size="16"> </p>
+ <p> 2.Phép chia:  <input type="text" id="txta" name="T2" size="13"> ÷ 
+        <input type="text" id="txtb" name="T3" size="14"> 
+        <input type="button" value=" = " onclick="Chia()"> 
+        <input type="text" id="txtkq" name="T6" size="16"> </p>
+		<p>
+			3.Phép cộng: 
+			<input type="text" id="txtU" name="T2" size="13"> + 
+			<input type="text" id="txtX" name="T3" size="14"> 
+			<input type="button" value=" = " onclick="Cong()"> 
+			<input type="text" id="txtOP" name="T6" size="16" readonly>
+		</p>
+		<p>
+			4.Phép trừ: 
+			<input type="text" id="txtC" name="T2" size="13"> - 
+			<input type="text" id="txtD" name="T3" size="14"> 
+			<input type="button" value=" = " onclick="Tru()"> 
+			<input type="text" id="txtDA" name="T6" size="16" readonly>
+		</p>
+	</body>
+
+</html>
